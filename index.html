@@ -165,13 +165,51 @@ Mars Science Laboratory (Curiosity Rover) Mission.   </span></h2></li>
 <br><span style="FONT-WEIGHT: 400">
 To appear: CCS 2016 - ACM Conference on Computer and Communications Security.</span>
 </h2>
+<span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-BoyleGI16b')">Abstract</a>] 		[<a href="http://eprint.iacr.org/2014/594">PDF</a>]
+</span></h2> 			 <div class="box" id="abstract-BoyleGI16b" style="border-style:solid; border-width:1px;
+display: none; padding-left:4px; padding-right:4px; padding-top:1px;
+padding-bottom:1px; background-color:#F0F0F0"> 			<h2><span style="font-weight:
+400">
+Function Secret Sharing (FSS), introduced by Boyle et al. (Eurocrypt 2015), provides a way for additively secret-sharing a function from a given function family F. More concretely, an m-party FSS scheme splits a function $f : {0,1}^n \to G, for some abelian group G, into functions f_1,...,f_m, described by keys k_1,...,k_m, such that f = f_1 + ... + f_m and every strict subset of the keys hides f. A Distributed Point Function (DPF) is a special case where F is the family of point functions, namely functions f_{a,b} that evaluate to b on the input a and to 0 on all other inputs.
+<br><br>FSS schemes are useful for applications that involve privately reading from or writing to distributed databases while minimizing the amount of communication. These include different flavors of private information retrieval (PIR), as well as a recent application of DPF for large-scale anonymous messaging.
+<br><br>We improve and extend previous results in several ways:
+<br>1. Simplified FSS constructions. We introduce a tensoring operation for FSS which is used to obtain a conceptually simpler derivation of previous constructions and present our new constructions.
+<br>
+2. Improved 2-party DPF. We reduce the key size of the PRG-based DPF scheme of Boyle et al. roughly by a factor of 4 and optimize its computational cost. The optimized DPF significantly improves the concrete costs of 2-server PIR and related primitives.
+<br>
+3. FSS for new function families. We present an efficient PRG-based 2-party FSS scheme for the family of decision trees, leaking only the topology of the tree and the internal node labels. We apply this towards FSS for multi-dimensional intervals. We also present a general technique for extending FSS schemes by in- creasing the number of parties.
+<br>4. Verifiable FSS. We present efficient protocols for verifying that keys (k_1,...,k_m), obtained from a potentially malicious user, are consistent with some f \in F. Such a verification may be critical for applications that involve private writing or voting by many users.
+</span></h2> </div>
+
+
+
+
 
      <li><h2><span style="FONT-WEIGHT: 400"> Elette Boyle, Niv Gilboa, and Yuval Ishai </span><span style="font-weight: 400"><br> </span>
      Breaking the Circuit-Size Barrier for Secure Computation Under DDH
 <br><span style="FONT-WEIGHT: 400">
 CRYPTO 2016 - International Conference on Cryptology.</span>
 <br>
-<b>Best Paper Award.</b>
+<b><i>Best Paper Award.</i></b>
+<span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-BoyleGI16')">Abstract</a>] 		[<a href="http://eprint.iacr.org/2014/594">PDF</a>]
+</span></h2> 			 <div class="box" id="abstract-BoyleGI16" style="border-style:solid; border-width:1px;
+display: none; padding-left:4px; padding-right:4px; padding-top:1px;
+padding-bottom:1px; background-color:#F0F0F0"> 			<h2><span style="font-weight:
+400">
+Under the Decisional Diffie-Hellman (DDH) assumption, we present a 2-out-of-2 secret sharing scheme that supports a compact evaluation of branching programs on the shares. More concretely, there is an evaluation algorithm \Eval with a single bit of output, such that if an input $w \in {0,1}^n$ is shared into $(w^0,w^1)$, then for any deterministic branching program P of size S we have that \Eval(P,w0) \xor \Eval(P,w1)=P(w), except with at most \delta failure probability. The running time of the sharing algorithm is polynomial in n and the security parameter \lambda, and that of \Eval is polynomial in S, \lambda, and 1/\delta. This applies as a special case to boolean formulas of size S or boolean circuits of depth log S. We also present a public-key variant that enables homomorphic computation on inputs contributed by multiple clients. The above result implies the following DDH-based applications:
+
+<br><br>
+- A secure 2-party computation protocol for evaluating any branching program of size S, where the communication complexity is linear in the input size and only the running time grows with S.
+
+<br><br>
+- A secure 2-party computation protocol for evaluating any layered boolean circuit of size S and m outputs with communication complexity O(S/logS)+m*poly(\lambda).
+
+<br><br>
+-A 2-party {\em function secret sharing} scheme, as defined by Boyle et al. (Eurocrypt 2015), for general branching programs (with inverse polynomial error probability).
+
+<br><br>
+- A 1-round 2-server {\em private information retrieval} scheme supporting general searches expressed by branching programs.
+</span></h2> </div>
 <span style="FONT-WEIGHT: 400"><br> 		
 [<a href="http://eprint.iacr.org/2016/585.pdf">PDF</a>]
 </span></h2>
@@ -181,11 +219,22 @@ CRYPTO 2016 - International Conference on Cryptology.</span>
 
      <li><h2><span style="FONT-WEIGHT: 400"> Elette Boyle and Moni Naor </span><span style="font-weight: 400"><br> </span>Is There an Oblivious RAM Lower Bound?
 <br><span style="FONT-WEIGHT: 400">ITCS 2016 - Innovations in Theoretical Computer Science.</span>
+<span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-ORAM-LB')">Abstract</a>] 		[<a href="http://eprint.iacr.org/2014/594">PDF</a>]
+</span></h2> 			 <div class="box" id="abstract-ORAM-LB" style="border-style:solid; border-width:1px;
+display: none; padding-left:4px; padding-right:4px; padding-top:1px;
+padding-bottom:1px; background-color:#F0F0F0"> 			<h2><span style="font-weight:
+400">
+An Oblivious RAM (ORAM), introduced by Goldreich and Ostrovsky (JACM 1996), is a (probabilistic) RAM that hides its access pattern, i.e. for every input the observed locations accessed are similarly distributed. Great progress has been made in recent years in minimizing the overhead of ORAM constructions, with the goal of obtaining the smallest overhead possible.
+
+<br><br>
+We revisit the lower bound on the overhead required to obliviously simulate programs, due to Goldreich and Ostrovsky. While the lower bound is fairly general, including the offline case, when the simulator is given the reads and writes ahead of time, it does assume that the simulator behaves in a ?balls and bins? fashion. That is, the simulator must act by shuffling data items around, and is not allowed to have sophisticated encoding of the data.
+
+<br><br>
+We prove that for the offline case, showing a lower bound without the above restriction is related to the size of the circuits for sorting. Our proof is constructive, and uses a bit-slicing approach which manipulates the bit representations of data in the simulation. This implies that without obtaining yet unknown superlinear lower bounds on the size of such circuits, we cannot hope to get lower bounds on offline (unrestricted) ORAMs.
+</span></h2> </div>
 <span style="FONT-WEIGHT: 400"><br> 		
 [<a href="http://eccc.hpi-web.de/report/2015/146/">PDF</a>]
-</span></h2>
-
-
+</span>
 
 
 
@@ -217,12 +266,16 @@ Motivated by the goal of securely searching and pdating distributed data, we int
 
 We present two types of results. First, we obtain efficiency improvements and extensions of the original DPF construction. Then, we initiate a systematic study of general FSS, providing some constructions and establishing relations with other cryptographic primitives. More concretely, we obtain the following main results:
 
+<br><br>
 1. Improved DPF. We present an improved (two-party) DPF construction from a pseudorandom generator (PRG), reducing the length of the key describing each $f_i$ from $O(\lambda \cdot n^{\log_2(3)})$ to $O(\lambda n)$, where $\lambda$ is the PRG seed length.
 
+<br><br>
 2. Multi-party DPF. We present the first nontrivial construction of a $p$-party DPF for $p \ge 3$, obtaining a near-quadratic improvement over a naive construction that additively shares the truth-table of $f$. This construction too can be based on any PRG.
 
+<br><br>
 3. FSS for simple functions. We present efficient PRG-based FSS constructions for natural function classes that extend point functions, including interval functions and partial matching functions.
 
+<br><br>
 4. A study of general FSS. We show several relations between general FSS and other cryptographic primitives. These include a construction of general FSS via obfuscation, an indication for the implausibility of constructing general FSS from weak cryptographic assumptions such as the existence of one-way functions, a completeness result, and a relation with pseudorandom functions.
 
 </span></h2> </div>
