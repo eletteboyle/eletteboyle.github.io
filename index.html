@@ -158,19 +158,19 @@ Mars Science Laboratory (Curiosity Rover) Mission.   </span></h2></li>
 
 
      <li><h2><span style="FONT-WEIGHT: 400"> Elette Boyle and Moni Naor </span><span style="font-weight: 400"><br> </span>Is There an Oblivious RAM Lower Bound?
-<br><span style="FONT-WEIGHT: 400">To appear: ITCS 2016 - Innovations in Theoretical Computer Science.</span>
+<br><span style="FONT-WEIGHT: 400">ITCS 2016 - Innovations in Theoretical Computer Science.</span>
 <span style="FONT-WEIGHT: 400"><br> 		
 [<a href="http://eccc.hpi-web.de/report/2015/146/">PDF</a>]
 </span></h2>
 
-     </li><li><h2><span style="FONT-WEIGHT: 400"> Elette Boyle, Niv Gilboa, Yuval Ishai </span><span style="font-weight: 400"><br> </span>Function Secret Sharing
-<br><span style="FONT-WEIGHT: 400">Advances in Cryptology - EUROCRYPT 2015.</span>
-</h2>
+
+
 
 
 		</li><li><h2><span style="FONT-WEIGHT: 400"> Elette Boyle,
 	  Kai-Min Chung, and Rafael Pass</span><span style="font-weight: 400"><br> </span>Oblivious Parallel RAM
-<br><span style="FONT-WEIGHT: 400">To appear: TCC 2016 - Theory of Cryptography Conference.</span><span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-OPRAM')">Abstract</a>] 		[<a href="http://eprint.iacr.org/2014/594">PDF</a>]
+<br><span style="FONT-WEIGHT: 400">TCC 2016 - Theory of Cryptography Conference.</span>
+<span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-OPRAM')">Abstract</a>] 		[<a href="http://eprint.iacr.org/2014/594">PDF</a>]
 </span></h2> 			 <div class="box" id="abstract-OPRAM" style="border-style:solid; border-width:1px;
 display: none; padding-left:4px; padding-right:4px; padding-top:1px;
 padding-bottom:1px; background-color:#F0F0F0"> 			<h2><span style="font-weight:
@@ -180,6 +180,33 @@ A machine is said to be {\em oblivious} if the sequences of memory accesses made
 In this work we present the first {\em Oblivious Parallel RAM (OPRAM)} compiler, which compiles any PRAM into an oblivious PRAM while only incurring a polylogarithmic slowdown.
 
 </span></h2> </div>
+
+
+
+     </li><li><h2><span style="FONT-WEIGHT: 400"> Elette Boyle, Niv Gilboa, Yuval Ishai </span><span style="font-weight: 400"><br> </span>Function Secret Sharing
+<br><span style="FONT-WEIGHT: 400">Advances in Cryptology - EUROCRYPT 2015.</span>
+</h2>
+<span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-FSS2015')">Abstract</a>] 		[<a href="http://eprint.iacr.org/2014/594">PDF</a>]
+</span></h2> 			 <div class="box" id="abstract-OPRAM" style="border-style:solid; border-width:1px;
+display: none; padding-left:4px; padding-right:4px; padding-top:1px;
+padding-bottom:1px; background-color:#F0F0F0"> 			<h2><span style="font-weight:
+400">
+Motivated by the goal of securely searching and pdating distributed data, we introduce and study the notion of function secret sharing (FSS). This new notion is a natural generalization of distributed point functions (DPF), a primitive that was recently introduced by Gilboa and Ishai (Eurocrypt 2014). Given a positive integer $p \ge 2$ and a class $\mathcal{F}$ of functions $f: \{0,1\}^n \to \mathbb{G}$ where $\mathbb{G}$ is an Abelian group, a $p$-party FSS scheme for $\mathcal{F}$ allows one to split each $f \in \mathcal{F}$ into $p$ succinctly described functions $f_i: \{0,1\}^n \to \mathbb{G}$, $1 \le i \le p$, such that: (1) $\sum_{i1=}^p f_i = f$, and (2) any strict subset of the $f_i$ hides $f$. Thus, an FSS for $\mathcal{F}$ can be thought of as a method for succinctly performing an "additive secret sharing" of functions from $\mathcal{F}$.The original definition of DPF coincides with a two-party FSS for the class of point functions, namely the class of functions that have a nonzero output on at most one input.
+
+<br><br>
+
+We present two types of results. First, we obtain efficiency improvements and extensions of the original DPF construction. Then, we initiate a systematic study of general FSS, providing some constructions and establishing relations with other cryptographic primitives. More concretely, we obtain the following main results:
+
+1. Improved DPF. We present an improved (two-party) DPF construction from a pseudorandom generator (PRG), reducing the length of the key describing each $f_i$ from $O(\lambda \cdot n^{\log_2(3)})$ to $O(\lambda n)$, where $\lambda$ is the PRG seed length.
+
+2. Multi-party DPF. We present the first nontrivial construction of a $p$-party DPF for $p \ge 3$, obtaining a near-quadratic improvement over a naive construction that additively shares the truth-table of $f$. This construction too can be based on any PRG.
+
+3. FSS for simple functions. We present efficient PRG-based FSS constructions for natural function classes that extend point functions, including interval functions and partial matching functions.
+
+4. A study of general FSS. We show several relations between general FSS and other cryptographic primitives. These include a construction of general FSS via obfuscation, an indication for the implausibility of constructing general FSS from weak cryptographic assumptions such as the existence of one-way functions, a completeness result, and a relation with pseudorandom functions.
+
+</span></h2> </div>
+
 
 
      
@@ -197,7 +224,7 @@ We are interested in secure computation protocols in settings where the number o
 
 		</li><li><h2><span style="FONT-WEIGHT: 400"> Elette Boyle
 	 and Rafael Pass</span><span style="font-weight: 400"><br> </span>Limits of Extractability Assumptions with Distributional Auxiliary Input 
-<br><span style="FONT-WEIGHT: 400">To appear: Asiacrypt 2015.</span><span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-ext-assmpt')">Abstract</a>] 		[<a href="http://eprint.iacr.org/2013/703.pdf">PDF</a>]
+<br><span style="FONT-WEIGHT: 400">Asiacrypt 2015.</span><span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-ext-assmpt')">Abstract</a>] 		[<a href="http://eprint.iacr.org/2013/703.pdf">PDF</a>]
 </span></h2> 			 <div class="box" id="abstract-ext-assmpt" style="border-style:solid; border-width:1px;
 display: none; padding-left:4px; padding-right:4px; padding-top:1px;
 padding-bottom:1px; background-color:#F0F0F0"> 			<h2><span style="font-weight:
@@ -459,8 +486,11 @@ roving laboratory planned for launch in 2009. While humans can issue commands to
 
     <td dir="ltr" align="left" bgcolor="#D0D0D0">
 
-	<ul> <li> EUROCRYPT 2016.</li></ul>
-	<ul> <li> Theory of Cryptography Conference (TCC) 2015.</li> </ul>
+	<ul> <li>CRYPTO 2017 - International Conference on Cryptology.</li></ul>
+	<ul> <li>Innovations in Theoretical Computer Science (ITCS) 2017.</li></ul>
+	<ul> <li>Theory of Cryptography Conference (TCC) 2016B.</li></ul>
+	<ul> <li>EUROCRYPT 2016.</li></ul>
+	<ul> <li>Theory of Cryptography Conference (TCC) 2015.</li> </ul>
  	<ul> <li>Conference on Security and Cryptography for Networks (SCN) 2014.</li> </ul>
    </td></tr>
    
