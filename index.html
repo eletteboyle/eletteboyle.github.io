@@ -132,13 +132,31 @@ My research interests include cryptography, computer security, coding theory, al
 
 
 
+     <li><h2><span style="FONT-WEIGHT: 400"> Elette Boyle, Niv Gilboa, and Yuval Ishai </span><span style="font-weight: 400"><br> </span>
+Group-Based Secure Computation: Optimizing Rounds, Communication, and Computation
+<br><span style="FONT-WEIGHT: 400">
+Advances in Cryptology - EUROCRYPT 2017.</span>
+<span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-BoyleGI17')">Abstract</a>] 
+</span></h2> 			 <div class="box" id="abstract-BoyleGI17" style="border-style:solid; border-width:1px;
+display: none; padding-left:4px; padding-right:4px; padding-top:1px;
+padding-bottom:1px; background-color:#F0F0F0"> 			<h2><span style="font-weight:
+400">
+A recent work of Boyle et al. (Crypto 2016) suggests that "group-based" cryptographic protocols, namely ones that only rely on a cryptographically hard (Abelian) group, can be surprisingly powerful. In particular, they present succinct two-party protocols for securely computing branching programs and NC1 circuits under the DDH assumption, providing the first alternative to fully homomorphic encryption.In this work we further explore the power of group-based secure computation protocols, improving both their asymptotic and concrete efficiency. We obtain the following results.
+<ul>
+<li> <i> Black-box use of group. </i> We modify the succinct protocols of Boyle et al. so that they only make a black-box use of the underlying group, eliminating an expensive non-black-box setup phase. </li><li><i> Round complexity. </i> For any constant number of parties, we obtain 2-round MPC protocols based on a PKI setup under the DDH assumption. Prior to our work, such protocols were only known using fully homomorphic encryption or indistinguishability obfuscation. </li><li><i> Communication complexity. </i>  Under DDH, we present a secure 2-party protocol for any NC1 or log-space computation with n input bits and m output bits using n + (1 + o(1))m + poly(\lambda) bits of communication, where \lambda is a security parameter. In particular, our protocol can generate n instances of bit-oblivious-transfer using (4 + o(1))n bits of communication. This gives the first constant-rate OT protocol under DDH. </li><li><i> Computation complexity. </i> We present several techniques for improving the computational cost of the share conversion procedure of Boyle et al., improving the concrete efficiency of group-based protocols by several orders of magnitude. </li>
+<br>
+</span></h2> </div>
+
+
+
 
 
      <li><h2><span style="FONT-WEIGHT: 400"> Elette Boyle, Niv Gilboa, and Yuval Ishai </span><span style="font-weight: 400"><br> </span>
      Function Secret Sharing: Improvements and Extensions
 <br><span style="FONT-WEIGHT: 400">
-To appear: CCS 2016 - ACM Conference on Computer and Communications Security.</span>
+CCS 2016 - ACM Conference on Computer and Communications Security.</span>
 <span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-BoyleGI16b')">Abstract</a>] 
+	[<a href="FSS-CCS.pdf">PDF</a>]
 </span></h2> 			 <div class="box" id="abstract-BoyleGI16b" style="border-style:solid; border-width:1px;
 display: none; padding-left:4px; padding-right:4px; padding-top:1px;
 padding-bottom:1px; background-color:#F0F0F0"> 			<h2><span style="font-weight:
@@ -148,14 +166,13 @@ Function Secret Sharing (FSS), introduced by Boyle et al. (Eurocrypt 2015), prov
 FSS schemes are useful for applications that involve privately reading from or writing to distributed databases while minimizing the amount of communication. These include different flavors of private information retrieval (PIR), as well as a recent application of DPF for large-scale anonymous messaging.
 <br><br>
 We improve and extend previous results in several ways:
+<ul>
+<li> <i>Simplified FSS constructions.</i> We introduce a tensoring operation for FSS which is used to obtain a conceptually simpler derivation of previous constructions and present our new constructions. </li>
+<li> <i>Improved 2-party DPF.</i> We reduce the key size of the PRG-based DPF scheme of Boyle et al. roughly by a factor of 4 and optimize its computational cost. The optimized DPF significantly improves the concrete costs of 2-server PIR and related primitives. </li>
+<lit> <i>FSS for new function families.</i> We present an efficient PRG-based 2-party FSS scheme for the family of decision trees, leaking only the topology of the tree and the internal node labels. We apply this towards FSS for multi-dimensional intervals. We also present a general technique for extending FSS schemes by in- creasing the number of parties.  </li>
+<li><i>Verifiable FSS.</i> We present efficient protocols for verifying that keys (k_1,...,k_m), obtained from a potentially malicious user, are consistent with some f \in F. Such a verification may be critical for applications that involve private writing or voting by many users. </li>
+</ul>
 <br>
-1. Simplified FSS constructions. We introduce a tensoring operation for FSS which is used to obtain a conceptually simpler derivation of previous constructions and present our new constructions.
-<br>
-2. Improved 2-party DPF. We reduce the key size of the PRG-based DPF scheme of Boyle et al. roughly by a factor of 4 and optimize its computational cost. The optimized DPF significantly improves the concrete costs of 2-server PIR and related primitives.
-<br>
-3. FSS for new function families. We present an efficient PRG-based 2-party FSS scheme for the family of decision trees, leaking only the topology of the tree and the internal node labels. We apply this towards FSS for multi-dimensional intervals. We also present a general technique for extending FSS schemes by in- creasing the number of parties.
-<br>
-4. Verifiable FSS. We present efficient protocols for verifying that keys (k_1,...,k_m), obtained from a potentially malicious user, are consistent with some f \in F. Such a verification may be critical for applications that involve private writing or voting by many users.
 </span></h2> </div>
 
 
@@ -167,8 +184,10 @@ We improve and extend previous results in several ways:
 <br><span style="FONT-WEIGHT: 400">
 CRYPTO 2016 - International Conference on Cryptology.</span>
 <br>
-<b><i>Best Paper Award.</i></b>
-<span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-BoyleGI16')">Abstract</a>] 		[<a href="http://eprint.iacr.org/2016/585.pdf">PDF</a>]
+<b><i>Best Paper Award</i></b>
+<span style="FONT-WEIGHT: 400"><br> 		
+	[<a href="javascript:toggle('abstract-BoyleGI16')">Abstract</a>] 		
+	[<a href="http://eprint.iacr.org/2016/585.pdf">PDF</a>]
 </span></h2> 			 <div class="box" id="abstract-BoyleGI16" style="border-style:solid; border-width:1px;
 display: none; padding-left:4px; padding-right:4px; padding-top:1px;
 padding-bottom:1px; background-color:#F0F0F0"> 			<h2><span style="font-weight:
@@ -193,7 +212,7 @@ Under the Decisional Diffie-Hellman (DDH) assumption, we present a 2-out-of-2 se
 
      <li><h2><span style="FONT-WEIGHT: 400"> Elette Boyle and Moni Naor </span><span style="font-weight: 400"><br> </span>Is There an Oblivious RAM Lower Bound?
 <br><span style="FONT-WEIGHT: 400">ITCS 2016 - Innovations in Theoretical Computer Science.</span>
-<span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-ORAM-LB')">Abstract</a>] 		[<a href="http://eccc.hpi-web.de/report/2015/146/">PDF</a>]
+<span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-ORAM-LB')">Abstract</a>] 		[<a href="https://eccc.weizmann.ac.il/report/2015/146/revision/1/download">PDF</a>]
 </span></h2> 			 <div class="box" id="abstract-ORAM-LB" style="border-style:solid; border-width:1px;
 display: none; padding-left:4px; padding-right:4px; padding-top:1px;
 padding-bottom:1px; background-color:#F0F0F0"> 			<h2><span style="font-weight:
@@ -226,7 +245,7 @@ In this work we present the first {\em Oblivious Parallel RAM (OPRAM)} compiler,
 
 
      </li><li><h2><span style="FONT-WEIGHT: 400"> Elette Boyle, Niv Gilboa, Yuval Ishai </span><span style="font-weight: 400"><br> </span>Function Secret Sharing
-<br><span style="FONT-WEIGHT: 400">Advances in Cryptology - EUROCRYPT 2015.</span><span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-FSS')">Abstract</a>] 		[<a href="http://link.springer.com/chapter/10.1007%2F978-3-662-46803-6_12">PDF</a>]
+<br><span style="FONT-WEIGHT: 400">Advances in Cryptology - EUROCRYPT 2015.</span><span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-FSS')">Abstract</a>] 		[<a href="FunctionSecretSharing.pdf">PDF</a>]
 </span></h2> 			 <div class="box" id="abstract-FSS" style="border-style:solid; border-width:1px;
 display: none; padding-left:4px; padding-right:4px; padding-top:1px;
 padding-bottom:1px; background-color:#F0F0F0"> 			<h2><span style="font-weight:
@@ -257,7 +276,7 @@ We present two types of results. First, we obtain efficiency improvements and ex
 
 		</li><li><h2><span style="FONT-WEIGHT: 400"> Elette Boyle,
 	 Kai-Min Chung, and Rafael Pass</span><span style="font-weight: 400"><br> </span>Large-Scale Secure Computation
-<br><span style="FONT-WEIGHT: 400">CRYPTO 2015 - International Conference on Cryptology.</span><span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-largeMPC')">Abstract</a>] 		[<a href="http://eprint.iacr.org/2014/404">PDF</a>]
+<br><span style="FONT-WEIGHT: 400">CRYPTO 2015 - International Conference on Cryptology.</span><span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-largeMPC')">Abstract</a>] 		[<a href="http://eprint.iacr.org/2014/404.pdf">PDF</a>]
 </span></h2> 			 <div class="box" id="abstract-largeMPC" style="border-style:solid; border-width:1px;
 display: none; padding-left:4px; padding-right:4px; padding-top:1px;
 padding-bottom:1px; background-color:#F0F0F0"> 			<h2><span style="font-weight:
@@ -273,23 +292,27 @@ We are interested in secure computation protocols in settings where the number o
 display: none; padding-left:4px; padding-right:4px; padding-top:1px;
 padding-bottom:1px; background-color:#F0F0F0"> 			<h2><span style="font-weight:
 400">
-Extractability, or "knowledge," assumptions (such as the "knowledge-of-exponent" assumption) have recently gained popularity in the cryptographic community—leading to the study of primitives such as extractable one-way functions, extractable hash functions, succinct non-interactive arguments of knowledge (SNARKs), and extractable obfuscation, and spurring the development of a wide spectrum of new applications relying on these primitives. For most of these applications, it is required that the extractability assumption holds even in the presence of attackers receiving some auxiliary information that is sampled from some fixed efficiently computable distribution Z.
-<br><br>
-We show that, assuming the existence of collision-resistant hash functions, there exists a pair of efficient distributions Z, Z'; such that either:
-<ul>
-<li> extractable one-way functions w.r.t. Z do not exist, or </li>
-<li> extractability obfuscations for Turing machines w.r.t. Z do not exist. </li>
-</ul>
-<br><br> 
+Extractability, or "knowledge," assumptions have recently gained popularity in the cryptographic community, leading to the study of primitives such as extractable one-way functions, extractable hash functions, succinct non-interactive arguments of knowledge (SNARKs), and (public-coin) differing-inputs obfuscation ((PC-)diO), and spurring the development of a wide spectrum of new applications relying on these primitives. For most of these applications, it is required that the extractability assumption holds even in the presence of attackers receiving some auxiliary information that is sampled from some fixed efficiently computable distribution Z.
+</br></br>
 
-A corollary of this result shows that assuming existence of fully homomorphic encryption with decryption in NC1, there exist efficient distributions Z, Z' such that either
+We show that, assuming the existence of public-coin collision-resistant hash functions, there exists an efficient distributions Z such that either
 <ul>
-<li> extractability obfuscations for NC1 w.r.t. Z do not exist, or </li>
-<li> SNARKs for NP w.r.t. Z' do not exist. </li>
+<li> PC-diO for Turing machines does not exist, or </li>
+<li> extractable one-way functions w.r.t. auxiliary input Z do not exist. </li>
 </ul>
-<br><br> 
+<br>
 
-To achieve our results, we develop a "succinct punctured program" technique, mirroring the powerful "punctured program" technique of Sahai and Waters (ePrint'13), and present several other applications of this new technique.
+A corollary of this result shows that additionally assuming existence of fully homomorphic encryption with decryption in NC1, there exists an efficient distribution Z such that either
+<ul>
+<li> SNARKs for NP w.r.t. auxiliary input Z do not exist, or </li>
+<li> PC-diO for NC1 circuits does not exist. </li>
+</ul>
+<br>
+
+To achieve our results, we develop a ?succinct punctured program? technique, mirroring the powerful punctured program technique of Sahai and Waters (STOC'14), and present several other applications of this new technique. In particular, we construct succinct perfect zero knowledge SNARGs and give a universal instantiation of random oracles in full-domain hash applications, based on PC-diO.
+
+</br></br>
+As a final contribution, we demonstrate that even in the absence of auxiliary input, care must be taken when making use of extractability assumptions. We show that (standard) diO w.r.t. any distribution D over programs and bounded-length auxiliary input is directly implied by any obfuscator that satisfies the weaker indistinguishability obfuscation (iO) security notion and diO for a slightly modified distribution D' of programs (of slightly greater size) and no auxiliary input. As a consequence, we directly obtain negative results for (standard) diO in the absence of auxiliary input.
 </span></h2> </div>
 
 
@@ -373,7 +396,7 @@ At the heart of our construction is a new two-round oblivious transfer protocol 
 	 </span><span style="font-weight: 400"><br> </span>
 Communication Locality in Secure Multi-party Computation: 
 <br>How to Run Sublinear Algorithms in a Distributed Setting
-<br><span style="FONT-WEIGHT: 400">TCC 2013 - Theory of Cryptography Conference.</span><span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-sl-mpc')">Abstract</a>] 		[<a href="MPC-Locality-TCC13.pdf">PDF</a>]
+<br><span style="FONT-WEIGHT: 400">TCC 2013 - Theory of Cryptography Conference.</span><span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-sl-mpc')">Abstract</a>] 		[<a href="CR-local-MPC.pdf">PDF</a>]
 </span></h2> 			 <div class="box" id="abstract-sl-mpc" style="border-style:solid; border-width:1px;
 display: none; padding-left:4px; padding-right:4px; padding-top:1px;
 padding-bottom:1px; background-color:#F0F0F0"> 			<h2><span style="font-weight:
@@ -395,7 +418,7 @@ Our optimized protocols rely on a multi-signature scheme, fully homomorphic encr
 	Shafi Goldwasser, Abhishek Jain, and Yael Tauman Kalai
 	 </span><span style="font-weight: 400"><br> </span>
 Multi-Party Computation Secure Against Continual Memory Leakage
-<br><span style="FONT-WEIGHT: 400">STOC 2012 - ACM Symposium on Theory of Computing.</span><span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-LR-MPC')">Abstract</a>] 		[<a href="LR-MPC-STOC12.pdf">PDF</a>]
+<br><span style="FONT-WEIGHT: 400">STOC 2012 - ACM Symposium on Theory of Computing.</span><span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-LR-MPC')">Abstract</a>] 		[<a href="http://dl.acm.org/citation.cfm?id=2214087">PDF</a>]
 </span></h2> 			 <div class="box" id="abstract-LR-MPC" style="border-style:solid; border-width:1px;
 display: none; padding-left:4px; padding-right:4px; padding-top:1px;
 padding-bottom:1px; background-color:#F0F0F0"> 			<h2><span style="font-weight:
@@ -418,7 +441,7 @@ Our result relies on standard cryptographic assumptions, and our security parame
 	 </span><span style="font-weight: 400"><br> </span>
 Leakage-Resilient Coin Tossing
 <br><span style="FONT-WEIGHT: 400">DISC 2011 - The International Symposium on Distributed Computing.
-	<br> <i>Invited to Distributed Computing.</i></span><span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-LR-coin')">Abstract</a>] 		[<a href="http://eprint.iacr.org/2011/291">PDF</a>]
+	<br> <i>Invited to Distributed Computing.</i></span><span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-LR-coin')">Abstract</a>] 		[<a href="http://eprint.iacr.org/2011/291.pdf">PDF</a>]
 </span></h2> 			 <div class="box" id="abstract-LR-coin" style="border-style:solid; border-width:1px;
 display: none; padding-left:4px; padding-right:4px; padding-top:1px;
 padding-bottom:1px; background-color:#F0F0F0"> 			<h2><span style="font-weight:
@@ -445,7 +468,7 @@ Another contribution of our work is a tool we use to achieve collective coin fli
 	 </span><span style="font-weight: 400"><br> </span>
 Fully Leakage-Resilient Signatures
 <br><span style="FONT-WEIGHT: 400">Advances in Cryptology - EUROCRYPT 2011.
-	<br> <i>Invited to Journal of Cryptology.</i></span><span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-FLR-sig')">Abstract</a>] 		[<a href="http://eprint.iacr.org/2010/488">PDF</a>]
+	<br> <i>Invited to Journal of Cryptology.</i></span><span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-FLR-sig')">Abstract</a>] 		[<a href="http://eprint.iacr.org/2010/488.pdf">PDF</a>]
 </span></h2> 			 <div class="box" id="abstract-FLR-sig" style="border-style:solid; border-width:1px;
 display: none; padding-left:4px; padding-right:4px; padding-top:1px;
 padding-bottom:1px; background-color:#F0F0F0"> 			<h2><span style="font-weight:
@@ -472,7 +495,7 @@ Sequential Entry in Many-to-One Matching Markets
 display: none; padding-left:4px; padding-right:4px; padding-top:1px;
 padding-bottom:1px; background-color:#F0F0F0"> 			<h2><span style="font-weight:
 400">
-We study sequential bargaining in many-to-one matching markets. We show that there is an advantage to entering late in the market, and that the last agent to enter the market will receive his or her best partner in a stable matching, extending the results of Blum and Rothblum (J Econ Theory 103(2):429-443, 2002) and Cechlárová (Randomized matching mechanism revisited. Mimeo, Safarik University, 2002) for the marriage model. We also discuss the relation between sequential bargaining and a possible alternative formulation based on the NTU Shapley value.
+We study sequential bargaining in many-to-one matching markets. We show that there is an advantage to entering late in the market, and that the last agent to enter the market will receive his or her best partner in a stable matching, extending the results of Blum and Rothblum (J Econ Theory 103(2):429-443, 2002) and Cechl&aacute;rov&aacute; (Randomized matching mechanism revisited. Mimeo, Safarik University, 2002) for the marriage model. We also discuss the relation between sequential bargaining and a possible alternative formulation based on the NTU Shapley value.
 </span></h2> </div>
 
 
@@ -483,7 +506,7 @@ We study sequential bargaining in many-to-one matching markets. We show that the
 	and Robert McEliece
 	 </span><span style="font-weight: 400"><br> </span>
 Asymptotic Weight Enumerators of Randomly Punctured, Expurgated, and Shortened Code Ensembles 
-<br><span style="FONT-WEIGHT: 400">46th Annual Allerton Conference on Communication, Control, and Computing, 2008. </span><span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-codes')">Abstract</a>] 		[<a href="Altered-Codes-Allerton08.pdf">PDF</a>]
+<br><span style="FONT-WEIGHT: 400">46th Annual Allerton Conference on Communication, Control, and Computing, 2008. </span><span style="FONT-WEIGHT: 400"><br> 		[<a href="javascript:toggle('abstract-codes')">Abstract</a>] 		[<a href="http://ieeexplore.ieee.org/document/4797654/">PDF</a>]
 </span></h2> 			 <div class="box" id="abstract-codes" style="border-style:solid; border-width:1px;
 display: none; padding-left:4px; padding-right:4px; padding-top:1px;
 padding-bottom:1px; background-color:#F0F0F0"> 			<h2><span style="font-weight:
@@ -530,6 +553,8 @@ roving laboratory planned for launch in 2009. While humans can issue commands to
 
     <td dir="ltr" align="left" bgcolor="#D0D0D0">
 
+	<ul> <li>ACM Conference on Computer and Communications Security (ACM CCS) 2017.</li></ul>
+	<ul> <li>Theory of Cryptography Conference (TCC) 2017.</li></ul>
 	<ul> <li>CRYPTO 2017 - International Conference on Cryptology.</li></ul>
 	<ul> <li>Innovations in Theoretical Computer Science (ITCS) 2017.</li></ul>
 	<ul> <li>Theory of Cryptography Conference (TCC) 2016B.</li></ul>
